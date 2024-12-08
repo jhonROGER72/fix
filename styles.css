@@ -1,0 +1,104 @@
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Encabezado */
+header {
+    background-color: #16589b;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+/* Navegación */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #005bb5;
+}
+
+nav ul li {
+    position: relative;
+    padding: 15px;
+}
+
+nav ul li a {
+    color: rgba(0, 43, 59, 0.795);
+    text-decoration: none;
+}
+
+nav ul li:hover > .submenu {
+    display: block;
+}
+
+/* Submenú */
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #24c1e988;
+    top: 100%;
+    left: 0;
+    min-width: 150px;
+}
+
+.submenu li {
+    padding: 10px;
+}
+
+.submenu li a {
+    color: #0d187a;
+}
+
+/* Portada */
+#portada {
+    position: relative;
+    height: 300px;
+    text-align: center;
+    color: rgb(43, 200, 206)41, 33, 33);
+    padding: 80px 20px;
+    overflow: hidden;
+}
+
+.portada-imagen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1s;
+}
+
+#portada h2, #portada p {
+    position: relative;
+    z-index: 1;
+}
+
+/* Contenido Principal */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+/* Pie de Página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
